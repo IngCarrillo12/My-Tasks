@@ -45,18 +45,18 @@ function TaskForm() {
     <div className="container">
     <form onSubmit={handleSubmit} className="form">
    
-      <Link to={'/'}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+      <Link to={'/'}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
         </svg></Link>
        <h2 className="form-title">{ params.id?'Edit Task':'Create Task'}</h2>
       
-    <div class="form-group"> 
+    <div className="form-group"> 
 	  <input type="text" onChange={handleChange} value={Task.title} name="title" className="form-control" placeholder="Title" required />
-	    <label for='title' className="form-label" > Name </label> 
+	    <label htmlFor='title' className="form-label" > Name </label> 
 </div> 
-<div class="form-group"> 
+<div className="form-group"> 
 	<textarea type="text" onChange={handleChange} value={Task.description} name="description" className="form-control textArea" placeholder="Description"/>
-	<label className="label-textArea"> Description </label> 
+	<label htmlFor='description' className="label-textArea"> Description </label> 
 </div> 
 <button className="button-save">Save</button>
 	</form>
