@@ -5,13 +5,16 @@
     background-color: #222831 ;
     color: #f2f2f2;
 }
+.contenedor-tasksList{
+    height: 70%;
+}
 .container{
     display: flex;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     width: 1200px;
     justify-content: center;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 /* TASKLIST */
 .taskList{
@@ -70,7 +73,8 @@
     padding: 1.5rem 2rem;
     border:1px solid #455368;
     width: 90%;
-    height: 90%;
+    height: 120px;
+    max-height: 700px;
     transition: ease-in-out .6s;
 }
 .card-info{
@@ -109,7 +113,7 @@
 .cardList-card:hover{
     border:1px solid #f96d00;
     width:100% ;
-    height: 100%;
+    height: 130px;
     box-shadow: -10px 5px 10px #f2f2f242;
 }
 .button-delete:hover{
@@ -283,8 +287,8 @@ TaskForm */
         display: grid;
         grid-template-columns: repeat(2,1fr);
         place-items: center;
+        align-items: start;
         gap: 10px;
-        width: 100%;
     }
 }
 
@@ -299,8 +303,8 @@ TaskForm */
         display: grid;
         grid-template-columns: repeat(1,1fr);
         place-items: center;
+        align-items: start;
         gap: 10px;
-        width: 100%;
     }
     .form {
         width: 100%;

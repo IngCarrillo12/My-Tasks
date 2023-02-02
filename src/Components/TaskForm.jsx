@@ -51,8 +51,8 @@ function TaskForm() {
        <h2 className="form-title">{ params.id?'Edit Task':'Create Task'}</h2>
       
     <div class="form-group"> 
-	  <input type="text" onChange={handleChange} value={Task.title} name="title" className="form-control" placeholder="Title"/>
-	    <label for='title' className="form-label"> Name </label> 
+	  <input type="text" onChange={handleChange} value={Task.title} name="title" className="form-control" placeholder="Title" required />
+	    <label for='title' className="form-label" > Name </label> 
 </div> 
 <div class="form-group"> 
 	<textarea type="text" onChange={handleChange} value={Task.description} name="description" className="form-control textArea" placeholder="Description"/>

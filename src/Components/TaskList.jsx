@@ -12,6 +12,7 @@ function TaskList(){
   return (
     <div className="container">
     <div className="taskList">
+     
       <div className="taskList-title">
           <h2>My Tasks</h2>
           <span> ({tasks.length})</span>
@@ -20,6 +21,7 @@ function TaskList(){
       <header className="taskList-header">
           <Link className="createTask" to='/create-task'>Create Tasks</Link>      
     </header>
+    <div className="contenedor-tasksList">
     <div className="taskList-cardList">
       {
         tasks.map(task =>(
@@ -41,6 +43,7 @@ function TaskList(){
           </div>
         ))
       }
+      </div>
       </div>
       </div>
       </div>
